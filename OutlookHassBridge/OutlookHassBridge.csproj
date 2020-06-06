@@ -24,7 +24,7 @@
     <ProjectGuid>{CFAE99BE-07B6-434D-A1C7-071F4497146D}</ProjectGuid>
     <OutputType>Library</OutputType>
     <NoStandardLibraries>false</NoStandardLibraries>
-    <RootNamespace>OutlookAddIn1</RootNamespace>
+    <RootNamespace>OutlookHassBridge</RootNamespace>
     <AssemblyName>OutlookHassBridge</AssemblyName>
     <LoadBehavior>3</LoadBehavior>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
@@ -189,7 +189,6 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-    <Compile Include="Settings.cs" />
     <Compile Include="ThisAddIn.cs">
       <SubType>Code</SubType>
     </Compile>

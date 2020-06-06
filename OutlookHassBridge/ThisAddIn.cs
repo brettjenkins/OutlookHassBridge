@@ -48,7 +48,7 @@ namespace OutlookHassBridge
 
         private async Task UpdateHass()
         {
-            if (string.IsNullOrWhiteSpace(Settings.Appurl))
+            if (string.IsNullOrWhiteSpace(Properties.Settings.Default.Url))
                 return;
 
             var status = new OutlookStatus(IsUnread());
@@ -63,7 +63,7 @@ namespace OutlookHassBridge
                     var stringContent = new StringContent(json, Encoding.UTF8, "application/json");
                     ServicePointManager.SecurityProtocol = SecurityProtocolType.Tls12;
                     
-                    await client.PutAsync(Settings.Appurl, stringContent);
+                    await client.PutAsync(Properties.Settings.Default.Url, stringContent);
                 }
 
             }
